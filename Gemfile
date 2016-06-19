@@ -62,6 +62,13 @@ group :development, :test do
   #generate ERD diagrams - cmd: rake erd
   #http://rails-erd.rubyforge.org/customise.html
   gem "rails-erd"
+
+  #Annotate Models - https://github.com/ctran/annotate_models
+  #just run "annotate" in terminal
+  gem 'annotate'
+
+  #Faker gem - https://github.com/stympy/faker
+  gem 'faker'
 end
 
 

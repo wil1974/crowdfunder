@@ -8,6 +8,8 @@
 </head>
 <body>
 
+<%= render 'layouts/navbar' %>
+
 <div class="container">
   <% flash.each do |type, message| %>
     <div class="alert <%= bootstrap_flash_class(type) %> fade in">
