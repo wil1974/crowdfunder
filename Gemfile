@@ -100,6 +100,10 @@ gem 'devise'
 # https://github.com/plataformatec/simple_form
 gem 'simple_form'
 
+# https://github.com/Nerian/bootstrap-wysihtml5-rails
+# Alternatives could be tinymce-rails
+gem 'bootstrap-wysihtml5-rails'
+
 #https://github.com/CanCanCommunity/cancancan
 #https://www.sitepoint.com/cancancan-rails-authorization-dance/
 # gem 'cancancan', '~> 1.10'
