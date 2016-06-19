@@ -1,0 +1,12 @@
+<h2 class="text-center">Log In</h2>
+
+<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'form-signin'}) do |f| %>
+<!--  we need to use a special method, input_html, that will sanitise the input and translate it to html classes -->
+    <%= f.input :email, required: false, autofocus: true, placeholder: 'email', label: false, input_html: {class: 'form-control'} %>
+    <%= f.input :password, required: false, placeholder: 'password', label: false, input_html: {class: 'form-control'} %>
+    <%#= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+
+    <%= f.button :submit, "Log in", class: 'btn btn-primary btn-block' %>
+<% end %>
+
+<%= render "devise/shared/links" %>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crowdfunder</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">
+  <% flash.each do |type, message| %>
+    <div class="alert <%= bootstrap_flash_class(type) %> fade in">
+      <%= message %>
+      <a class="close" data-dismiss="alert">
+        <i class="glyphicon glyphicon-remove"></i>
+      </a>
+    </div>
+  <% end %>
+
+  <%= yield %>
+</div>
+
+</body>
+</html>
