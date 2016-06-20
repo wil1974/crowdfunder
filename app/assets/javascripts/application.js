@@ -15,4 +15,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-wysihtml5
+//= require moment
+//= require bootstrap-datetimepicker
+//= require pickers
 //= require_tree .

@@ -123,6 +123,19 @@ gem 'bootstrap-wysihtml5-rails'
 #https://github.com/aasm/aasm
 # gem 'aasm'
 
+#ActiveRecord Date Validator - https://github.com/codegram/date_validator
+gem 'date_validator'
+#Date gems for rails frontend
+#lightweight javascript date library for parsing, manipulating, and formatting dates
+#depdendency for datetimepicker-rails
+#https://github.com/derekprior/momentjs-rails
+gem 'momentjs-rails'
+# bootstrap-datetimepicker for Rails asset pipeline and
+# creates the Simple Form custom fields for your project -https://github.com/zpaulovics/datetimepicker-rails
+#use below for bootstrap3 and rails4+ and simpleform combo
+#need to run generator as well - "rails g datetimepicker_rails:install Font-Awesome"
+gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
+
 #zdennis/activerecord-import
 #activerecord-import is a library for bulk inserting data using ActiveRecord.
 #speed improvement thru reducing SQL statments.

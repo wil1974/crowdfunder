@@ -1,11 +1,13 @@
 <%= simple_form_for(@project, html: {class: 'form-horizontal'}) do |f| %>
   <%= f.input :name %>
   <%= f.input :short_description %>
-  <%= f.input :description, as: :wysihtml5 %>
+  <%= f.input :description, input_html: {rows: 8}, as: :wysihtml5 %>
   <%= f.input :goal %>
   <%= f.input :image_url %>
+  <%= f.input :expiration_date, :as => :date_picker %>
 
   <div class="actions">
     <%= f.button :submit %>
   </div>
 <% end %>
+
