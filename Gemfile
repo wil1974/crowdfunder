@@ -89,7 +89,7 @@ gem 'font-awesome-rails'
 # gem 'mini_magick'
 # gem 'fog-aws'
 #bundle exec figaro install
-# gem 'figaro'
+gem 'figaro'
 # gem 'bootstrap-will_paginate'
 gem 'devise'
 #https://github.com/herval/yahoo-finance
@@ -116,8 +116,11 @@ gem 'bootstrap-wysihtml5-rails'
 #https://github.com/norman/friendly_id
 # gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 
-#Stripe gem
-# gem 'stripe'
+#Stripe payment
+#gem 'stripe'
+
+#Braintree payment - https://github.com/braintree/braintree_ruby
+gem 'braintree'
 
 #State Machine for tracking transaction
 #https://github.com/aasm/aasm
