@@ -1,0 +1,6 @@
+<tr>
+  <th scope="row"><%= pledge.id %></th>
+  <th><%= link_to pledge.project.name, project_path(pledge.project)  %></th>
+  <th><%= number_to_currency(pledge.amount, unit: "$") %></th>
+  <th><%= pledge.estimated_delivery %></th>
+</tr>

@@ -39,6 +39,7 @@ Rails.application.routes.draw do
   #nested routes
   resources :projects do
     resources :rewards, only: [:new, :create, :edit, :update, :destroy]
+    resources :pledges
   end
 
   root 'projects#index'

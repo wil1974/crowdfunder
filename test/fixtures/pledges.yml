@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  reward_id: 
+  amount: 1
+  shipping: 9.99
+  expiration_date: 2016-06-20
+  uuid: MyString
+  name: MyString
+  address: MyString
+  city: MyString
+  country: MyString
+  postal_code: MyString
+  status: MyString
+
+two:
+  user_id: 
+  reward_id: 
+  amount: 1
+  shipping: 9.99
+  expiration_date: 2016-06-20
+  uuid: MyString
+  name: MyString
+  address: MyString
+  city: MyString
+  country: MyString
+  postal_code: MyString
+  status: MyString

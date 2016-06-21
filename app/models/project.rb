@@ -21,4 +21,10 @@ class Project < ActiveRecord::Base
 
   validates :name, :short_description, :description, :image_url,
             :expiration_date, :goal, presence: true
+
+  #Pledge and Projects table dont have any relationship.
+  #so we need to create a new method to map both methods
+  def pledges
+    rewards.flat_map(&:pledges)
+  end
 end
