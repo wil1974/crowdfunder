@@ -41,7 +41,7 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
- gem 'thin'
+  gem 'thin'
   gem 'better_errors'  #Only use in Development, Dont use in Production as it is high risk
   gem 'quiet_assets'  #Shuts off assets request messages in Rails
   gem 'meta_request'  #require the chrome extension as well https://chrome.google.com/webstore/detail/railspanel/gjpfobpafnhjhbajcjgccbbdofdckggg
@@ -138,6 +138,14 @@ gem 'momentjs-rails'
 #use below for bootstrap3 and rails4+ and simpleform combo
 #need to run generator as well - "rails g datetimepicker_rails:install Font-Awesome"
 gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
+
+#active jobs for delayed jobs
+#http://edgeguides.rubyonrails.org/active_job_basics.html
+gem 'delayed_job_active_record'
+#access the web interface http://localhost:3000/delayed_job/overview
+gem 'delayed_job_web'
+
+gem 'friendly_id'
 
 #zdennis/activerecord-import
 #activerecord-import is a library for bulk inserting data using ActiveRecord.

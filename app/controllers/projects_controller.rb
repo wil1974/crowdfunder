@@ -56,11 +56,11 @@ class ProjectsController < ApplicationController
 
   private
   def set_project
-    @project = Project.find(params[:id])
+    @project = Project.friendly.find(params[:id])
   end
 
   def project_params
     params.require(:project).permit(:name, :short_description, :description,
-                 :goal, :image_url, :expiration_date)
+                 :goal, :image_url, :expiration_date, :slug)
   end
 end

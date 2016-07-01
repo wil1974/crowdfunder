@@ -45,6 +45,8 @@ Rails.application.routes.draw do
 
   root 'projects#index'
 
+  match '/delayed_job' => DelayedJobWeb, :anchor => false, via: [:get, :post]
+
   # get '/home' => 'pages#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

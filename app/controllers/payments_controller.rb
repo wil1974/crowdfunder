@@ -58,7 +58,7 @@ class PaymentsController < ApplicationController
 
   private
   def set_project
-    @project = Project.find(params[:project_id])
+    @project = Project.friendly.find(params[:project_id])
   end
 
   # From the amount field in pledge form
