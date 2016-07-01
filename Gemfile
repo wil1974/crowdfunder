@@ -106,7 +106,7 @@ gem 'bootstrap-wysihtml5-rails'
 
 #https://github.com/CanCanCommunity/cancancan
 #https://www.sitepoint.com/cancancan-rails-authorization-dance/
-# gem 'cancancan', '~> 1.10'
+gem 'cancancan', '~> 1.10'
 
 #https://github.com/thoughtbot/paperclip
 # gem "paperclip"

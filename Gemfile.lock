@@ -72,6 +72,7 @@ GEM
     builder (3.2.2)
     byebug (9.0.5)
     callsite (0.0.11)
+    cancancan (1.13.1)
     choice (0.2.0)
     code_analyzer (0.4.5)
       sexp_processor
@@ -282,6 +283,7 @@ DEPENDENCIES
   bootswatch-rails
   braintree
   byebug
+  cancancan (~> 1.10)
   coffee-rails (~> 4.1.0)
   date_validator
   datetimepicker-rails!

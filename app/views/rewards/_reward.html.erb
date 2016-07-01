@@ -1,3 +1,5 @@
+<% if can? :manage, reward %>
+
 <div class="text-right">
   <%= link_to "Edit", edit_project_reward_path(@project, reward)  %>
   <%= link_to "Delete", project_reward_path(@project, reward), method: :delete, data: {confirm: "Delete Reward?"}  %>
@@ -18,5 +20,7 @@
     <div class="reward-hover">Select this reward.</div>
   </div>
 </div>
+
+<% end %>
 
 <% end %>

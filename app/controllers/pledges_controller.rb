@@ -12,6 +12,7 @@ class PledgesController < ApplicationController
   end
 
   def index
+    authorize! :manage, @project
     @pledges = @project.pledges
     respond_to do |format|
       format.html
